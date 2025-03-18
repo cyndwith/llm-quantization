@@ -7,6 +7,8 @@ The general architecture of transformer is shown below with quantization precisi
 
 ![Transformer Quantization precision](./images/transformer-quantization-details.png)
 
+![Transformer Modules Quantization precision](./images/transformer-modules-quantization.png)
+
 # Results
 
 # GPTQ
