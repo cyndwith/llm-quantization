@@ -5,7 +5,7 @@ Comparison of different LLM Quantization algorithms
 
 The general architecture of transformer is shown below with quantization precision mapping. 
 
-![Transformer Quantization precision](./images/transformer-details-white.png)
+![Transformer Quantization precision](./images/transformer-quantization-details.png)
 
 # Results
 
