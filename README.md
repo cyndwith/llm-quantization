@@ -11,7 +11,19 @@ The general architecture of transformer is shown below with quantization precisi
 
 # Results
 
+- Perplexity is a commonly used metric for evaluating language models, including large language models (LLMs)
+- Perplexity is a measure of how well a language model predicts a set of words.
+- A lower perplexity score means the model makes better predictions.
+- In these tests WikiText-2 dataset is used, which consists of a diverse collection of Wikipedia articles
+
+
 # GPTQ
+
+- Perplexity measurement on the wikitest-2 database on different sizes of the OPT / Llama-2 models
+- Quantization configuration (INT4-g128):
+  - INT4 : Weight quantization precision
+  - g128: Using 128 group size
+- These results are generated using the AutoGPTQ library
 
 OPT Model:
 
@@ -26,6 +38,7 @@ OPT Model:
 
 Llama-2 Model:
 
+
 <div align="center">
 
 | PPL                  | Llama-2-7B | Llama-2-13B | Llama-2-70B |
@@ -36,6 +49,11 @@ Llama-2 Model:
 </div>
 
 # AWQ
+
+- These results are generated using the AWQ implementation [3]
+- Quantization configuration:
+  - INT4: Weight quantization precision
+  - g128: Uses 128 group size
 
 OPT Model:
 
@@ -60,6 +78,11 @@ Llama-2 Model:
 </div>
 
 # SmoothQuant
+
+- SmoothQuant[2] shows reliable results with 8-bit quantization
+- Quantization Configuration:
+  - W8: Weight quantization precision
+  - A8: Activation quantization precision
 
 OPT Model: perlexity metric
 
